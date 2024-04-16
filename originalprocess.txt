@@ -1,0 +1,48 @@
+for i in range(Num_files_FLT):
+    name=path1+'/'+files1[i]
+    img=cv.imread(name)
+    img_gs=cv.cvtColor(img,cv.COLOR_RGB2GRAY)
+    img_gs=cv.resize(img_gs,(100,100))
+    img_gs=img_gs/255
+    img_gs=img_gs.reshape(100,100,1)
+    data[i,:,:]=img_gs
+    label.append('Flat Tire')
+
+plt.imshow(data[99],cmap='gray')
+
+for i in range(Num_files_FUT):
+    name=path2+'/'+files2[i]
+    img=cv.imread(name)
+    img_gs=cv.cvtColor(img,cv.COLOR_RGB2GRAY)
+    img_gs=cv.resize(img_gs,(100,100))
+    img_gs=img_gs/255
+    img_gs=img_gs.reshape(100,100,1)
+    data[i+Num_files_FLT,:,:]=img_gs
+    label.append('Full Tire')
+
+for i in range(Num_files_NT):
+    name=path3+'/'+files3[i]
+    img=cv.imread(name)
+    img_gs=cv.cvtColor(img,cv.COLOR_RGB2GRAY)
+    img_gs=cv.resize(img_gs,(100,100))
+    img_gs=img_gs/255
+    img_gs=img_gs.reshape(100,100,1)
+    data[i+Num_files_FLT+Num_files_FUT,:,:]=img_gs
+    label.append('No Tire')
+
+after: 
+path1="C:\\Users\\meera\\Documents\\BTech CSE spl. AIML\\VS code\\CAO Project\\cao_dataset\\flat.class"
+path2="C:\\Users\\meera\\Documents\\BTech CSE spl. AIML\\VS code\\CAO Project\\cao_dataset\\full.class"
+path3="C:\\Users\\meera\\Documents\\BTech CSE spl. AIML\\VS code\\CAO Project\\cao_dataset\\no-tire.class"
+files1=os.listdir(path1)
+files2=os.listdir(path2)
+files3=os.listdir(path3)
+Num_files_FLT=len(files1)
+Num_files_FUT=len(files2)
+Num_files_NT=len(files3)
+dataset_len=Num_files_FLT+Num_files_FUT+Num_files_NT
+
+len(files3)
+
+
+before:

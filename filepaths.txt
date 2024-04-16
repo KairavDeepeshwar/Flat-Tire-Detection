@@ -1,0 +1,4 @@
+1. Flat Tire path : C:\\Users\\meera\\Documents\\BTech CSE spl. AIML\\VS code\\CAO Project\\Test\\FlatTire-Test.jpg
+2. Full Tire path : C:\\Users\\meera\\Documents\\BTech CSE spl. AIML\\VS code\\CAO Project\\Test\\FullTire-Test.jpg
+3. No Tire 1 path (half tire) : C:\\Users\\meera\\Documents\\BTech CSE spl. AIML\\VS code\\CAO Project\\Test\\NoTire-Test1.jpg
+4. No Tire 2 path (No tire) : C:\\Users\\meera\\Documents\\BTech CSE spl. AIML\\VS code\\CAO Project\\Test\\NoTire-Test2.jpg
