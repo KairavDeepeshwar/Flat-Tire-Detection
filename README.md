@@ -78,5 +78,5 @@ Contributions are welcome! To contribute:
 MIT License. See `LICENSE` for details.
 
 ## Contact
-For questions or support, contact: [your-email@example.com]
+For questions or support, contact: [meera.rd.0709@gmail.com]
 ```
